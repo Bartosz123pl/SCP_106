@@ -22,7 +22,7 @@ namespace SCP_106.Commands
         public string[] Aliases => new[] { "stlk" };
         public string Description => "Przenosi cię do losowego pomieszczenia";
         private static readonly Dictionary<string, DateTime> LastCommandUsage = new Dictionary<string, DateTime>();
-        private const float CooldownSeconds = 20f;
+        private const float CooldownSeconds = 60f;
 
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
